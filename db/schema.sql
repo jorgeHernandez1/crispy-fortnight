@@ -1,0 +1,4 @@
+DROP DATABASE IF EXISTS teamapp_db;
+
+-- CREATE DATABASE
+CREATE DATABASE teamapp_db;
