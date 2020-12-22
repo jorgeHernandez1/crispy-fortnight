@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 3001;
 app.use(routes);
 
 const sess = {
-    secret: 'Secret Secret Super'
+    secret: 'Secret Secret Super',
     cookie: {},
     resave: false,
     saveUninitialized: true,
