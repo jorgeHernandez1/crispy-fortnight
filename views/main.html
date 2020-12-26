@@ -26,44 +26,24 @@
             </container>
         </nav>
         <container>
-            <card>
-                <!-- Tip: use bg-* and text-* utilities to style the card -->
-                <div id="accordion" role="tablist">
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingOne">
-                            <h5 class="mb-0">
-                                <a data-toggle="collapse" href="#collapseOne" aria-expanded="true"
-                                    aria-controls="collapseOne">
-                                    Collapsible Group Item #1
-                                </a>
-                            </h5>
-                        </div>
+            <h2>Login</h2>
 
-                        <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header" role="tab" id="headingTwo">
-                            <h5 class="mb-0">
-                                <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false"
-                                    aria-controls="collapseTwo">
-                                    Collapsible Group Item #2
-                                </a>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </card>
+<form class="form login-form">
+  <div class="form-group">
+    <label for="login">username:</label>
+    <input class="form-input" type="text" id="login" />
+  </div>
+  <div class="form-group">
+    <label for="password-login">password:</label>
+    <input class="form-input" type="password" id="password-login" />
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">login</button>
+  </div>
+</form>
+
+<script src="/js/login.js"></script>
+
         </container>
     </div>
 
