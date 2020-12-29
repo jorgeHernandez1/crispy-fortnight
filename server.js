@@ -13,7 +13,6 @@ const PORT = process.env.PORT || 3001;
 
 const hbs = exphbs.create({});
 
-app.use(routes);
 
 const sess = {
     secret: 'Secret Secret Super',
