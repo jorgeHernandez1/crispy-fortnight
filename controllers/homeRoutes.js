@@ -15,5 +15,8 @@ router.get('/signup', async (req, res) =>{
     logged_in: req.session.logged_in,
   })
 });
+router.get('/dashboard', async (req, res) => {
+  res.render('dashboard')
+});
 
 module.exports = router;
