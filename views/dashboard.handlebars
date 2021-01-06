@@ -1,13 +1,27 @@
-<p>Google Calendar API Quickstart</p>
-
-<!--Add buttons to initiate auth sequence and sign out-->
-<button id="authorize_button" style="display: none;">Authorize</button>
-<button id="signout_button" style="display: none;">Sign Out</button>
-
-<pre id="content" style="white-space: pre-wrap;"></pre>
-
+<div class="row">
+    <div class="col-xs-2 m-2">
+        <p>Previous Appointments:</p>
+    </div>
+    {{#if appointments }}
+    {{#each appointments as |appointment|}}
+    <div class="col m-2">
+        <div class="card">
+            <div class="card-header">
+                Onesie with {{ appointment.organizer }} and {{ appointment.attendee }}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title"> {{appointment.time}} </h5>
+                <a href="#" class="btn btn-purple">View Details</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+    {{else}}
+    <div class="card-body m-2 text-center">You do not have any upcoming appointments</div>
+    {{/if}}
+</div>
+<div class="row m-2">
+    <a class="btn btn-primary btn-lg mx-auto" href="/newAppointment" role="button" id="newAppointment">Create a new
+        appointment</a>
+</div>
 <script type="text/javascript" src='/js/maps.js'></script>
-
-<script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()"
-    onreadystatechange="if (this.readyState === 'complete') this.onload()">
-    </script>
