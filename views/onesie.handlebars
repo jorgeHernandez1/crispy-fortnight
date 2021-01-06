@@ -1,20 +1,25 @@
-    <div class="row mt-2 col align-center text-center mx-auto">
-        <div class="card flex-fill" style="width: 64rem;">
-            <div class="card-header text-white font-weight-bolder bg-primary">
-                Road Blocks
-            </div>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Question 1</li>
-                <li class="list-group-item">Question 2</li>
-                <li class="list-group-item">Question 3</li>
-                <li class="list-group-item">Question 4</li>
-                <li class="list-group-item">Question 5</li>
-            </ul>
-            <div class="card-footer">
-                <button type="button" class="btn btn-outline-success">Success</button>
-            </div>
+
+<div class="row mt-2 col align-center text-center mx-auto">
+    <div class="card flex-fill" style="width: 64rem;">
+        <div class="card-header text-white font-weight-bolder bg-primary">
+            Road Blocks
+        </div>
+        <ul class="list-group list-group-flush">
+            {{#each questions as |question|}}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"> {{ question.display_name }} </h5>
+                    <small class="text-muted"> {{question.created_at}} </small>
+                </div>
+                <p class="mb-1"> {{question.user_content}} </p>
+            </a>
+            {{/each}}
+        </ul>
+        <div class="card-footer">
+            <button type="button" class="btn btn-outline-success">Success</button>
         </div>
     </div>
+</div>
 
 
 
@@ -24,11 +29,15 @@
             Wins and Accomplishments
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Question 1</li>
-            <li class="list-group-item">Question 2</li>
-            <li class="list-group-item">Question 3</li>
-            <li class="list-group-item">Question 4</li>
-            <li class="list-group-item">Question 5</li>
+            {{#each questions as |question|}}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ question.display_name }}</h5>
+                    <small class="text-muted">{{question.created_at}}</small>
+                </div>
+                <p class="mb-1">{{question.user_content}}</p>
+            </a>
+            {{/each}}
         </ul>
         <div class="card-footer">
             <button type="button" class="btn btn-outline-success">Success</button>
@@ -43,11 +52,15 @@
             Personal Improvement
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Question 1</li>
-            <li class="list-group-item">Question 2</li>
-            <li class="list-group-item">Question 3</li>
-            <li class="list-group-item">Question 4</li>
-            <li class="list-group-item">Question 5</li>
+            {{#each questions as |question|}}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ question.display_name }}</h5>
+                    <small class="text-muted">{{question.created_at}}</small>
+                </div>
+                <p class="mb-1">{{question.user_content}}</p>
+            </a>
+            {{/each}}
         </ul>
         <div class="card-footer">
             <button type="button" class="btn btn-outline-success">Success</button>
@@ -63,11 +76,15 @@
             Leadership Support
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Question 1</li>
-            <li class="list-group-item">Question 2</li>
-            <li class="list-group-item">Question 3</li>
-            <li class="list-group-item">Question 4</li>
-            <li class="list-group-item">Question 5</li>
+            {{#each questions as |question|}}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ question.display_name }}</h5>
+                    <small class="text-muted">{{question.created_at}}</small>
+                </div>
+                <p class="mb-1">{{question.user_content}}</p>
+            </a>
+            {{/each}}
         </ul>
         <div class="card-footer">
             <button type="button" class="btn btn-outline-success">Success</button>
@@ -83,16 +100,18 @@
             Future team goals
         </div>
         <ul class="list-group list-group-flush">
-            <li class="list-group-item">Question 1</li>
-            <li class="list-group-item">Question 2</li>
-            <li class="list-group-item">Question 3</li>
-            <li class="list-group-item">Question 4</li>
-            <li class="list-group-item">Question 5</li>
+            {{#each questions as |question|}}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">{{ question.display_name }}</h5>
+                    <small class="text-muted">{{question.created_at}}</small>
+                </div>
+                <p class="mb-1">{{question.user_content}}</p>
+            </a>
+            {{/each}}
         </ul>
         <div class="card-footer">
             <button type="button" class="btn btn-outline-success">Success</button>
         </div>
     </div>
 </div>
-
-
