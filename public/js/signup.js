@@ -6,7 +6,6 @@ signupbtn.addEventListener('click', async (e) => {
   const email = document.querySelector('#signup-email').value.trim();
   const password = document.querySelector('#signup-pw').value.trim();
 
-  console.log(displayName,email,password)
   const response = await fetch('/api/users/', {
     method: 'POST',
     body: JSON.stringify({
