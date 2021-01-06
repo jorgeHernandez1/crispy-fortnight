@@ -18,5 +18,8 @@ router.get('/signup', async (req, res) =>{
 router.get('/dashboard', async (req, res) => {
   res.render('dashboard')
 });
+router.get('/onesie', async (req, res) => {
+  res.render('onesie')
+});
 
 module.exports = router;
