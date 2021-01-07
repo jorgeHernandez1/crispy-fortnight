@@ -1,0 +1,73 @@
+
+<!--Date & Time Selection-->
+<div class="container text-center">
+<h1 class="text-center">
+  Schedule your Onesie!
+</h1>
+<br>
+<br>
+<div class="container">
+    <select class="custom-select">
+        <option selected>Pick a Time</option>
+        <option value="1">9:00 AM</option>
+        <option value="2">10:00 AM</option>
+        <option value="3">11:00 AM</option>
+        <option value="4">12:00 PM</option>
+        <option value="5">1:00 PM</option>
+        <option value="6">2:00 PM</option>
+        <option value="7">3:00 PM</option>
+        <option value="8">4:00 PM</option>
+        <option value="9">5:00 PM</option>
+      </select>
+      </select>
+      <select class="custom-select">
+        <option selected>Time Zone</option>
+        <option value="1">PST</option>
+        <option value="2">MST</option>
+        <option value="3">CST</option>
+        <option value="4">EST</option>
+      </select>
+      </select>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container justified-content: center">
+    <!-- Content here -->
+
+<div class="row mt-2 col align-center text-center mx-auto">
+<div class="card text-white bg-primary mb-3 d-inline-block align-center text-center" style="max-width: 20rem;">
+    <div class="card-header"></div>
+    <div class="card-body text-center">
+      <h4 class="card-title text-center">Calendar</h4>
+      <p class="card text-center"><form action="/action_page.php">
+        <label for="datemin">Select Meeting Date:</label>
+        <input type="date" id="datemin" name="datemin" min="2021-01-02"><br><br>
+        <label for="quantity">Adjust Meeting Duration:</label><br><br>
+        <input type="number" id="quantity" name="quantity" min="15" max="30"><br><br>
+      </form>
+      </div></p>
+    </div>
+  </div>
+</div>
+<div class="container text-center">
+<form action="/action_page.php" method="post">
+    <br>
+    <br>
+    <br>
+    <form class="form-inline" action="MAILTO:emailaddress@email.com"... >
+      <label class="sr-only" for="inlineFormInputName2">Full Name or Email</label>
+      <h4 class="text-black-50 text-left">Search Members</h4>
+      <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Full Name or Email">
+        <hr>
+        <br>
+        <div class="container-fluid text-left">
+          <button type="button" class="btn btn-outline-success" action="mailto" method="get:">Send Request</button>
+        </div>
+        </label>
+      </div>
+    </form>
+</div>
+<!--end of first calendar block-->

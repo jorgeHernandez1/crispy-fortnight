@@ -51,7 +51,22 @@ router.get('/dashboard', async (req, res) => {
   };
 });
 router.get('/onesie', async (req, res) => {
-  res.render('onesie')
+  if(!req.session.logged_in){
+    // Redirect non logged in users to login page
+    res.render('login');
+  }else {
+    res.render('onesie')
+  }
 });
+
+//setting up a New Appointment route
+router.get('/newAppointment', async (req, res) => {
+  if(!req.session.logged_in){
+    // Redirect non logged in users to login page
+    res.render('login');
+  }else {
+    res.render('newAppointment')
+  }
+})
 
 module.exports = router;
