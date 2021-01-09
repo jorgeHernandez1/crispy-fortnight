@@ -68,5 +68,7 @@ router.get('/newAppointment', async (req, res) => {
     res.render('newAppointment')
   }
 })
-
+router.get('/logout', async (req, res) => {
+  res.render('logout');
+})
 module.exports = router;
